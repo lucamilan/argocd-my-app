@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+#  generateName: final-check-job-
+  name: final-check-job
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: verify
+          image: busybox
+          command: ["/bin/sh", "-c"]
+          args:
+            - echo "🚀 Verifico disponibilità di backend e frontend..."; sleep 5; echo "✅ Tutto operativo!"

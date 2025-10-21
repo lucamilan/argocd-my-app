@@ -1,0 +1,28 @@
+{
+	"name": "ArgoCD - MyApp",
+	"image": "quay.io/akuity/argo-cd-learning-assets/akuity-devcontainer:0.2.5",
+        "mounts": [
+        "source=devcontainer-bashhistory,target=/commandhistory,type=volume"
+    ],
+	"customizations": {
+        "vscode": {
+            "settings": {
+                "editor.tabSize": 4,
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "bash",
+                        "icon": "terminal-bash"
+                    },
+                    "pwsh": {
+                        "path": "pwsh",
+                        "icon": "terminal-powershell"
+                    }
+                }
+            },
+            "extensions": [
+                "redhat.vscode-yaml"
+            ]
+        }
+    }
+}
