@@ -15,3 +15,4 @@ spec:
     - name: http
       port: 8080
       targetPort: 9898
+      nodePort: 30072
