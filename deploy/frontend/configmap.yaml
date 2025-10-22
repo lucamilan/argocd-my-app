@@ -5,4 +5,4 @@ metadata:
   labels:
     app: frontend
 data:
-  PODINFO_UI_MESSAGE: "Frontend UI running!"
+  PODINFO_UI_MESSAGE: "Frontend UI is always running!"

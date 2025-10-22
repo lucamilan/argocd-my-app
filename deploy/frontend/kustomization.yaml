@@ -9,6 +9,7 @@ commonAnnotations:
 labels:
   - pairs:
       app/component: frontend
+      app/owner: luca-team
     includeSelectors: false
 
 resources:
