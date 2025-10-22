@@ -15,4 +15,4 @@ spec:
           image: busybox
           command: ["/bin/sh", "-c"]
           args:
-            - echo "🔍 Eseguo migrazione del database..."; sleep 5; echo "✅ Migrazione completata."
+            - echo "🔍 Eseguo migrazione del database..."; sleep 2; echo "✅ Migrazione completata."

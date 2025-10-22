@@ -15,4 +15,4 @@ spec:
           image: busybox
           command: ["/bin/sh", "-c"]
           args:
-            - echo "🚀 Verifico disponibilità di backend e frontend..."; sleep 5; echo "✅ Tutto operativo!"
+            - echo "🚀 Verifico disponibilità di backend e frontend..."; sleep 2; echo "✅ Tutto operativo!"

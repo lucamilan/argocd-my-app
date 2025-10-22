@@ -12,7 +12,6 @@ labels:
     includeSelectors: false
 
 resources:
+  - configmap.yaml
   - deployment.yaml
   - service.yaml
-  - hpa.yaml
-  - configmap.yaml
