@@ -6,6 +6,11 @@ namespace: my-app
 commonAnnotations:
   argocd.argoproj.io/sync-wave: "2"
 
+labels:
+  - pairs:
+      app/component: frontend
+    includeSelectors: false
+
 resources:
   - configmap.yaml
   - deployment.yaml

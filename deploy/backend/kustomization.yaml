@@ -6,6 +6,11 @@ namespace: my-app
 commonAnnotations:
   argocd.argoproj.io/sync-wave: "1"
 
+labels:
+  - pairs:
+      app/component: backend
+    includeSelectors: false
+
 resources:
   - deployment.yaml
   - service.yaml
