@@ -3,6 +3,12 @@ kind: Kustomization
 
 namespace: my-app
 
+labels:
+  - pairs:
+      app/type: microservice
+      #app/owner: platform-team  # esempio di etichetta commentata
+    includeSelectors: false
+
 resources:
   - backend/
   - frontend/
