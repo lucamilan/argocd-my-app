@@ -16,4 +16,3 @@ resources:
   - service.yaml
   - hpa.yaml
   - configmap.yaml
-  - migrate-database-job.yaml

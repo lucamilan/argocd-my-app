@@ -12,4 +12,5 @@ labels:
 resources:
   - backend/
   - frontend/
+  - hooks/
   - init/
